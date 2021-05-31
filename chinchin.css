@@ -1,0 +1,13 @@
+*, body, nav{
+	scroll-behavior:  smooth;
+	margin : 5px;
+	background-color: grey;
+	color : white;
+}
+#Home {
+	text-align : center
+}
+.set {
+	float : left;
+	border: black solid;
+}
