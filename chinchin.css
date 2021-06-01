@@ -1,5 +1,5 @@
 *, body, nav{
-	scroll-behavior:  smooth;
+	scroll-behavior: smooth;
 	margin : 5px;
 	background-color: grey;
 	color : white;
@@ -52,4 +52,8 @@
 	/*border : 2px black solid;*/
 	text-align: center;
 	border-bottom: 5px solid darkgrey;
+}
+.proj {
+	text-align: center;
+	text-decoration: underline;
 }
