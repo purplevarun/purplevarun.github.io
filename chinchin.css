@@ -5,6 +5,8 @@
 	color : white;
 }
 #Home {
+	/*position : relative;*/
+	/*top: 100px;*/
 	text-align : center
 }
 .set {
@@ -13,6 +15,7 @@
 	border-width: 1px;
 	border-color : grey;
 	width: 450px;
+	height: 450px;
 }
 .yo {
 	font-size : 30px
@@ -28,4 +31,25 @@
 .section:hover{
 	border : 3px white ;
 	border-style: groove;
+}
+#Skills {
+	/*background-color: black;*/
+	height: 1200px;
+}
+/*for desktop*/
+@media only screen and (min-width: 1200px){ 
+	*,body {
+		/*background-color : magenta;*/
+	}
+	#Skills {
+	/*background-color: black;*/
+	height: 800px;
+	}	
+}
+#top {
+	/*position : fixed;*/
+	width : 100%;
+	/*border : 2px black solid;*/
+	text-align: center;
+	border-bottom: 5px solid darkgrey;
 }
