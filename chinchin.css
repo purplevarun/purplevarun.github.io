@@ -9,8 +9,23 @@
 }
 .set {
 	float : left;
-	border: black solid;
+	border-style: solid;
+	border-width: 1px;
+	border-color : grey;
+	width: 450px;
 }
 .yo {
 	font-size : 30px
+}
+.section {
+	color: black;
+	text-align: center;
+	font-size : 40px;
+	font-weight: 700;
+	margin : 20px;
+	border : 3px white dotted;
+}
+.section:hover{
+	border : 3px white ;
+	border-style: groove;
 }
