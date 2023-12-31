@@ -7,6 +7,7 @@ const NavbarMobileMenu = () => {
             initial={{ x: 100 }}
             animate={{ x: 0 }}
             transition={{ delay: 1 }}
+            id="navbar_mobile"
         >
             <motion.div>
                 <FaList size={40} />

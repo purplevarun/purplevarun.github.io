@@ -1,10 +1,11 @@
 import Navbar from '../Navbar/Navbar.tsx'
+import Routes from './Routes.tsx'
 
 const Home = () => {
     return (
         <div>
             <Navbar />
-            <h1>Hello world</h1>
+            <Routes />
         </div>
     )
 }

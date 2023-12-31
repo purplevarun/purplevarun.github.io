@@ -3,9 +3,8 @@ import DarkModeContext from './DarkModeContext.tsx'
 import { ReactNode } from 'react'
 
 const DarkModeProvider = ({ children }: { children: ReactNode }) => {
-    const data = DarkModeData()
     return (
-        <DarkModeContext.Provider value={data}>
+        <DarkModeContext.Provider value={DarkModeData()}>
             {children}
         </DarkModeContext.Provider>
     )
