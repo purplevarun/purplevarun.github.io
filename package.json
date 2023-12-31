@@ -8,11 +8,13 @@
         "dev": "vite",
         "test": "vitest",
         "coverage": "vitest run --coverage",
-        "build": "tsc && vite build",
-        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview",
         "format": "prettier . --write",
-        "cleanup": "rm -rf node_modules yarn.lock && yarn"
+        "cleanup": "rm -rf node_modules yarn.lock && yarn",
+        "prepreview": "yarn clean && yarn build",
+        "preview": "vite preview",
+        "build": "tsc && vite build",
+        "postbuild": "cp dist/index.html dist/404.html",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
     },
     "dependencies": {
         "@testing-library/react": "^14.1.2",
