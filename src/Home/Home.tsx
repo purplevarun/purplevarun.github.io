@@ -1,4 +1,4 @@
-import useDarkMode from './DarkMode/DarkModeHook.tsx'
+import useDarkMode from '../DarkMode/DarkModeHook.tsx'
 
 const Home = () => {
     const { toggleDarkMode } = useDarkMode()

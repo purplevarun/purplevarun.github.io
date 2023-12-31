@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import useDarkMode from './DarkMode/DarkModeHook.tsx'
+import useDarkMode from '../DarkMode/DarkModeHook.tsx'
 import { appStyle } from './App.style.ts'
 
 const Layout = ({ children }: { children: ReactNode }) => {

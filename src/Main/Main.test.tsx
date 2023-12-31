@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { expect, test } from 'vitest'
-import App from './App'
+import App from '../App/App.tsx'
 
 test('should render hello world', () => {
     render(<App />)
