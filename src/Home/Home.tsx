@@ -1,10 +1,9 @@
-import useDarkMode from '../DarkMode/DarkModeHook.tsx'
+import Navbar from '../Navbar/Navbar.tsx'
 
 const Home = () => {
-    const { toggleDarkMode } = useDarkMode()
     return (
         <div>
-            <div onClick={toggleDarkMode}>Toggle dark mode</div>
+            <Navbar />
             <h1>Hello world</h1>
         </div>
     )
