@@ -1,17 +1,13 @@
-import { useEffect, useState } from 'react'
+import useLoader from './Loader/LoaderHook.tsx'
+import LoaderScreen from './Loader/LoaderScreen.tsx'
 
 const App = () => {
-    const [loaded, setLoaded] = useState(false)
-    useEffect(() => {
-        setTimeout(() => {
-            setLoaded(true)
-        }, 1000)
-    })
+    const loaded = useLoader()
 
     if (loaded) {
         return <h1>Hello world</h1>
     } else {
-        return <h1>Loading</h1>
+        return <LoaderScreen />
     }
 }
 export default App
