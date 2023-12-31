@@ -1,11 +1,17 @@
-import useLoader from './Loader/LoaderHook.tsx'
+import Home from './Home.tsx'
 import LoaderScreen from './Loader/LoaderScreen.tsx'
+import useLoader from './Loader/LoaderHook.tsx'
+import Layout from './Layout.tsx'
 
 const App = () => {
     const loaded = useLoader()
 
     if (loaded) {
-        return <h1>Hello world</h1>
+        return (
+            <Layout>
+                <Home />
+            </Layout>
+        )
     } else {
         return <LoaderScreen />
     }
