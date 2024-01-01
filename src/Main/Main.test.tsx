@@ -10,15 +10,17 @@ test('should not render anything initially', () => {
     expect(text).toBeFalsy()
 })
 
-async function sleep(time: number) {
-    await new Promise((r) => setTimeout(r, time))
-}
-
-test('should  render name after 2 sec', async () => {
+test('should  render name after 1 sec', async () => {
     render(<App />)
-    await sleep(2000)
+    await sleep(1100)
 
     const text = screen.getByText('Varun Kedia')
 
     expect(text).toBeTruthy()
 })
+
+//
+
+async function sleep(time: number) {
+    await new Promise((r) => setTimeout(r, time))
+}

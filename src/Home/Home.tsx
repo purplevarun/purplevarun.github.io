@@ -1,4 +1,4 @@
-import Navbar from '../Navbar/Navbar.tsx'
+import Navbar from '../Navbar/Navbar/Navbar.tsx'
 import Routes from './Routes.tsx'
 
 const Home = () => {

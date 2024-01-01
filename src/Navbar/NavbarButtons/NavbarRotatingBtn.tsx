@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
-import { BTN_DELAY } from '../constants/Constants.ts'
-import useRouter from '../Router/RouterHook.tsx'
-import Pages from '../constants/Pages.ts'
+import { BTN_DELAY } from '../../constants/Constants.ts'
+import useRouter from '../../Router/RouterHook.tsx'
+import Pages from '../../constants/Pages.ts'
 
-const RotatingBtn = ({
+const NavbarRotatingBtn = ({
     btnText,
     pageName,
 }: {
@@ -22,4 +22,4 @@ const RotatingBtn = ({
         </motion.h1>
     )
 }
-export default RotatingBtn
+export default NavbarRotatingBtn

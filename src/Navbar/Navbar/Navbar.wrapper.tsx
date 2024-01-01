@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import { navbarStyle } from './Navbar.style.ts'
 import { motion } from 'framer-motion'
-import useDarkMode from '../DarkMode/DarkModeHook.tsx'
+import useDarkMode from '../../DarkMode/DarkModeHook.tsx'
 
 const NavbarLayout = ({ children }: { children: ReactNode }) => {
     const { darkMode } = useDarkMode()

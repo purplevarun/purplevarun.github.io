@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { NAME_DELAY } from '../constants/Constants.ts'
+import { NAME_DELAY } from '../../constants/Constants.ts'
 
 const Name = () => {
     return (

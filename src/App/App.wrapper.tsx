@@ -3,7 +3,7 @@ import useDarkMode from '../DarkMode/DarkModeHook.tsx'
 import { appStyle } from './App.style.ts'
 import { AnimatePresence } from 'framer-motion'
 
-const Layout = ({ children }: { children: ReactNode }) => {
+const AppWrapper = ({ children }: { children: ReactNode }) => {
     const { darkMode } = useDarkMode()
     return (
         <div style={appStyle(darkMode)}>
@@ -11,4 +11,4 @@ const Layout = ({ children }: { children: ReactNode }) => {
         </div>
     )
 }
-export default Layout
+export default AppWrapper
