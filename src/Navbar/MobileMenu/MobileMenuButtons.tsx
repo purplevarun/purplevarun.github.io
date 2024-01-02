@@ -18,7 +18,11 @@ const MobileMenuButtons = () => {
             }}
         >
             {routes.map((route) => (
-                <MobileMenuItem name={route.name} page={route.page} key={route.name}/>
+                <MobileMenuItem
+                    name={route.name}
+                    page={route.page}
+                    key={route.name}
+                />
             ))}
         </motion.ul>
     )

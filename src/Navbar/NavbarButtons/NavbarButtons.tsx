@@ -6,7 +6,11 @@ const NavbarButtons = () => {
     return (
         <NavbarButtonsWrapper>
             {routes.map((route) => (
-                <NavbarRotatingBtn name={route.name} page={route.page} key={route.name}/>
+                <NavbarRotatingBtn
+                    name={route.name}
+                    page={route.page}
+                    key={route.name}
+                />
             ))}
         </NavbarButtonsWrapper>
     )
