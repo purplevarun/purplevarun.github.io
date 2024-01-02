@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import useDarkMode from '../DarkMode/DarkModeHook.tsx'
+import useDarkMode from '../../context/DarkMode/DarkModeHook.tsx'
 import { appStyle } from './App.style.ts'
 import { AnimatePresence } from 'framer-motion'
 

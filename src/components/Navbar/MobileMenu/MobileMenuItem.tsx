@@ -1,6 +1,6 @@
 import Pages from '../../constants/Pages.ts'
-import useMenu from '../../Menu/MenuHook.tsx'
-import useRouter from '../../Router/RouterHook.tsx'
+import useMenu from '../../../context/Menu/MenuHook.tsx'
+import useRouter from '../../../context/Router/RouterHook.tsx'
 
 const MobileMenuItem = ({ name, page }: { name: string; page: Pages }) => {
     const { toggleMenu } = useMenu()

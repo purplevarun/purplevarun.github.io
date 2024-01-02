@@ -1,5 +1,5 @@
 import { FaLightbulb, FaRegLightbulb } from 'react-icons/fa6'
-import useDarkMode from '../../DarkMode/DarkModeHook.tsx'
+import useDarkMode from '../../../context/DarkMode/DarkModeHook.tsx'
 import { ICON_SIZE } from '../../../constants/Constants.ts'
 
 const DarkModeButton = () => {
