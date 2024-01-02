@@ -1,6 +1,6 @@
 import NavbarButtonsWrapper from './NavbarButtons.wrapper.tsx'
 import NavbarRotatingBtn from './NavbarRotatingBtn.tsx'
-import routes from '../../data/RoutingData.ts'
+import routes from '../../../data/RoutingData.ts'
 
 const NavbarButtons = () => {
     return (

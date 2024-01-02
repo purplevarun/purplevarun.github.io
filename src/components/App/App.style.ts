@@ -1,4 +1,4 @@
-import { BLACK, TRANSITION, WHITE } from '../constants/Constants.ts'
+import { BLACK, TRANSITION, WHITE } from '../../constants/Constants.ts'
 
 const appStyle = (darkMode: boolean) => ({
     transition: TRANSITION,

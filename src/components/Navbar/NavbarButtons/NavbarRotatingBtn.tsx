@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { BTN_DELAY } from '../../constants/Constants.ts'
+import { BTN_DELAY } from '../../../constants/Constants.ts'
 import useRouter from '../../Router/RouterHook.tsx'
-import Pages from '../../constants/Pages.ts'
+import Pages from '../../../constants/Pages.ts'
 
 const NavbarRotatingBtn = ({ name, page }: { name: string; page: Pages }) => {
     const { setCurrentPage } = useRouter()

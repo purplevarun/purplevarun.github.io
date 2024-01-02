@@ -1,4 +1,4 @@
-import data from '../../data/Data.ts'
+import data from '../../../data/Data.ts'
 import LeftNameWrapper from './LeftName.wrapper.tsx'
 
 const LeftName = () => {

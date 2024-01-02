@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import useMenu from '../../Menu/MenuHook.tsx'
-import routes from '../../data/RoutingData.ts'
+import routes from '../../../data/RoutingData.ts'
 import MobileMenuItem from './MobileMenuItem.tsx'
 
 const MobileMenuButtons = () => {

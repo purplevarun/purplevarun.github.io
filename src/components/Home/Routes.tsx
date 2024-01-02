@@ -1,5 +1,5 @@
 import useRouter from '../Router/RouterHook.tsx'
-import Pages from '../constants/Pages.ts'
+import Pages from '../../constants/Pages.ts'
 import { ReactNode } from 'react'
 import About from '../Pages/About.tsx'
 import Experience from '../Pages/Experience.tsx'

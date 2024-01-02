@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from '../App/App.tsx'
+import App from '../components/App/App.tsx'
 import './Main.sass'
-import DarkModeProvider from '../DarkMode/DarkModeProvider.tsx'
-import RouterProvider from '../Router/RouterProvider.tsx'
+import DarkModeProvider from '../components/DarkMode/DarkModeProvider.tsx'
+import RouterProvider from '../components/Router/RouterProvider.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>

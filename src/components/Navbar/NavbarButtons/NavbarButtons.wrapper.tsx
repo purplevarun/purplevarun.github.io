@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
-import { BTN_DELAY } from '../../constants/Constants.ts'
+import { BTN_DELAY } from '../../../constants/Constants.ts'
 
 const NavbarButtonsWrapper = ({ children }: { children: ReactNode }) => {
     return (
