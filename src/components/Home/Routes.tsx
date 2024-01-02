@@ -1,9 +1,9 @@
 import useRouter from '../../context/Router/RouterHook.tsx'
 import Pages from '../../constants/Pages.ts'
 import { ReactNode } from 'react'
-import About from '../Pages/About.tsx'
-import Experience from '../Pages/Experience.tsx'
-import Projects from '../Pages/Projects.tsx'
+import About from '../../pages/About.tsx'
+import Experience from '../../pages/Experience.tsx'
+import Projects from '../../pages/Projects.tsx'
 
 const Routes = () => {
     const { currentPage } = useRouter()
