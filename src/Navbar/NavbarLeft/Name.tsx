@@ -5,7 +5,7 @@ const Name = () => {
     return (
         <motion.h1
             initial={{ x: -200 }}
-            animate={{ x: 10 }}
+            animate={{ x: 20 }}
             transition={{ delay: NAME_DELAY }}
         >
             Varun Kedia

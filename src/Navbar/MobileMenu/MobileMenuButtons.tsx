@@ -1,22 +1,13 @@
 import { motion } from 'framer-motion'
-import useRouter from '../../Router/RouterHook.tsx'
-import Pages from '../../constants/Pages.ts'
+import useMenu from '../../Menu/MenuHook.tsx'
+import routes from '../../data/RoutingData.ts'
+import MobileMenuItem from './MobileMenuItem.tsx'
 
-const MobileMenuButtons = ({
-    menuOpen,
-    toggleMenu,
-}: {
-    menuOpen: boolean
-    toggleMenu: () => void
-}) => {
-    const { setCurrentPage } = useRouter()
+const MobileMenuButtons = () => {
+    const { menuOpen } = useMenu()
     return (
         <motion.ul
-            style={{
-                listStyle: 'none',
-                display: 'flex',
-                flexDirection: 'column',
-            }}
+            id="mobile_menu_buttons"
             initial={{ y: 0, opacity: 0 }}
             animate={{
                 y: menuOpen ? 55 : 0,
@@ -26,42 +17,9 @@ const MobileMenuButtons = ({
                 transition: { duration: 0.8 },
             }}
         >
-            <li
-                onClick={() => {
-                    setCurrentPage(Pages.ABOUT_PAGE)
-                    toggleMenu()
-                }}
-                style={{
-                    borderLeft: '5px white solid',
-                    borderBottom: '5px white solid',
-                }}
-            >
-                <h3 style={{ padding: '5px' }}>About</h3>
-            </li>
-            <li
-                onClick={() => {
-                    setCurrentPage(Pages.EXPERIENCE_PAGE)
-                    toggleMenu()
-                }}
-                style={{
-                    borderLeft: '5px white solid',
-                    borderBottom: '5px white solid',
-                }}
-            >
-                <h3 style={{ padding: '5px' }}>Experience</h3>
-            </li>
-            <li
-                onClick={() => {
-                    setCurrentPage(Pages.PROJECTS_PAGE)
-                    toggleMenu()
-                }}
-                style={{
-                    borderLeft: '5px white solid',
-                    borderBottom: '5px white solid',
-                }}
-            >
-                <h3 style={{ padding: '5px' }}>Projects</h3>
-            </li>
+            {routes.map((route) => (
+                <MobileMenuItem name={route.name} page={route.page} key={route.name}/>
+            ))}
         </motion.ul>
     )
 }

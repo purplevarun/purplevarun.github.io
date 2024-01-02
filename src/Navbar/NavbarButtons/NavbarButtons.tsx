@@ -1,19 +1,13 @@
 import NavbarButtonsWrapper from './NavbarButtons.wrapper.tsx'
 import NavbarRotatingBtn from './NavbarRotatingBtn.tsx'
-import Pages from '../../constants/Pages.ts'
+import routes from '../../data/RoutingData.ts'
 
 const NavbarButtons = () => {
     return (
         <NavbarButtonsWrapper>
-            <NavbarRotatingBtn btnText="About" pageName={Pages.ABOUT_PAGE} />
-            <NavbarRotatingBtn
-                btnText="Experience"
-                pageName={Pages.EXPERIENCE_PAGE}
-            />
-            <NavbarRotatingBtn
-                btnText="Projects"
-                pageName={Pages.PROJECTS_PAGE}
-            />
+            {routes.map((route) => (
+                <NavbarRotatingBtn name={route.name} page={route.page} key={route.name}/>
+            ))}
         </NavbarButtonsWrapper>
     )
 }
