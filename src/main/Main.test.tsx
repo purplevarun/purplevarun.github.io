@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { expect, test } from 'vitest'
-import App from '../App/App.tsx'
+import App from '../components/App/App.tsx'
 
 test('should not render anything initially', () => {
     render(<App />)
