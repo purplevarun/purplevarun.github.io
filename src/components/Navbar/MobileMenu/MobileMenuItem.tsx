@@ -1,4 +1,4 @@
-import Pages from '../../constants/Pages.ts'
+import Pages from '../../../constants/Pages.ts'
 import useMenu from '../../../context/Menu/MenuHook.tsx'
 import useRouter from '../../../context/Router/RouterHook.tsx'
 
