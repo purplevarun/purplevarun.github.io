@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
-import { navbarStyle } from './Navbar.style.ts'
 import { motion } from 'framer-motion'
+import { BLACK, WHITE } from '../../../constants/Constants.ts'
 import useDarkMode from '../../../context/DarkMode/DarkModeHook.tsx'
 
 const NavbarLayout = ({ children }: { children: ReactNode }) => {
@@ -11,7 +11,9 @@ const NavbarLayout = ({ children }: { children: ReactNode }) => {
             id="navbar"
             initial={{ y: -100 }}
             animate={{ y: 0, transition: { type: 'spring' } }}
-            style={navbarStyle(darkMode)}
+            style={{
+                borderBottomColor: darkMode ? WHITE : BLACK,
+            }}
         >
             {children}
         </motion.div>

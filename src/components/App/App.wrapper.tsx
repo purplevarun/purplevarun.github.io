@@ -1,13 +1,19 @@
 import { ReactNode } from 'react'
+import { BLACK, TRANSITION, WHITE } from '../../constants/Constants.ts'
 import useDarkMode from '../../context/DarkMode/DarkModeHook.tsx'
-import { appStyle } from './App.style.ts'
-import { AnimatePresence } from 'framer-motion'
 
 const AppWrapper = ({ children }: { children: ReactNode }) => {
     const { darkMode } = useDarkMode()
     return (
-        <div style={appStyle(darkMode)}>
-            <AnimatePresence>{children}</AnimatePresence>
+        <div
+            style={{
+                transition: TRANSITION,
+                background: darkMode ? BLACK : WHITE,
+                color: darkMode ? WHITE : BLACK,
+                minHeight: '100vh',
+            }}
+        >
+            {children}
         </div>
     )
 }

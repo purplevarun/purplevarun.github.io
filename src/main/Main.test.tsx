@@ -14,9 +14,11 @@ test('should  render name after 1 sec', async () => {
     render(<App />)
     await sleep(1100)
 
-    const text = screen.getByText('Varun Kedia')
+    const firstName = screen.getByText('Varun')
+    const lastName = screen.getByText('Kedia')
 
-    expect(text).toBeTruthy()
+    expect(firstName).toBeTruthy()
+    expect(lastName).toBeTruthy()
 })
 
 //
