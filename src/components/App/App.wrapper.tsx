@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
-import { BLACK, TRANSITION, WHITE } from '../../constants/Constants.ts'
+import { TRANSITION } from '../../constants/Constants.ts'
 import useDarkMode from '../../context/DarkMode/DarkModeHook.tsx'
+import { BLACK_COLOR, WHITE_COLOR } from '../../constants/Colors.ts'
 
 const AppWrapper = ({ children }: { children: ReactNode }) => {
     const { darkMode } = useDarkMode()
@@ -8,8 +9,8 @@ const AppWrapper = ({ children }: { children: ReactNode }) => {
         <div
             style={{
                 transition: TRANSITION,
-                background: darkMode ? BLACK : WHITE,
-                color: darkMode ? WHITE : BLACK,
+                background: darkMode ? BLACK_COLOR : WHITE_COLOR,
+                color: darkMode ? WHITE_COLOR : BLACK_COLOR,
                 minHeight: '100vh',
             }}
         >

@@ -3,14 +3,20 @@ import data from '../data/Data.ts'
 import RainbowText from 'rainbow-text-react'
 import Formatter from '../components/Formatter/Formatter.tsx'
 import useDarkMode from '../context/DarkMode/DarkModeHook.tsx'
+import {
+    FIRST_HEADING_COLOR,
+    THIRD_HEADING_COLOR,
+} from '../constants/Colors.ts'
 
 const About = () => {
     const { darkMode } = useDarkMode()
     return (
         <div id="page">
             {/*summary*/}
-            <h1 id="header">About Me</h1>
-            <p id="about_content">
+            <h1 id="header" style={{ color: FIRST_HEADING_COLOR }}>
+                About Me
+            </h1>
+            <p id="content">
                 <Formatter text={data.aboutPage.summary} />
             </p>
 
@@ -29,30 +35,42 @@ const About = () => {
             )}
 
             {/*tech*/}
-            <h1 id="header">Technical Proficiency</h1>
+            <h1 id="header" style={{ color: FIRST_HEADING_COLOR }}>
+                Technical Proficiency
+            </h1>
             {data.aboutPage.technical.map((obj) => {
                 return (
-                    <div key={obj.key}>
-                        <h2>{obj.key}</h2>
+                    <div key={obj.key} id="content">
+                        <h2 style={{ color: THIRD_HEADING_COLOR }}>
+                            {obj.key}
+                        </h2>
                         <Formatter text={obj.value} />
                     </div>
                 )
             })}
 
             {/*traits*/}
-            <h1 id="header">Professional Traits</h1>
+            <h1 id="header" style={{ color: FIRST_HEADING_COLOR }}>
+                Professional Traits
+            </h1>
             {data.aboutPage.traits.map((obj) => {
                 return (
-                    <div key={obj.key}>
-                        <h2>{obj.key}</h2>
+                    <div key={obj.key} id="content">
+                        <h2 style={{ color: THIRD_HEADING_COLOR }}>
+                            {obj.key}
+                        </h2>
                         <Formatter text={obj.value} />
                     </div>
                 )
             })}
 
             {/*aspiration*/}
-            <h1 id="header">Personal Aspiration</h1>
-            <Formatter text={data.aboutPage.aspiration} />
+            <h1 id="header" style={{ color: FIRST_HEADING_COLOR }}>
+                Personal Aspiration
+            </h1>
+            <span id="content">
+                <Formatter text={data.aboutPage.aspiration} />
+            </span>
         </div>
     )
 }

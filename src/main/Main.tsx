@@ -5,14 +5,17 @@ import './Main.sass'
 import DarkModeProvider from '../context/DarkMode/DarkModeProvider.tsx'
 import RouterProvider from '../context/Router/RouterProvider.tsx'
 import { AnimatePresence } from 'framer-motion'
+import MenuProvider from '../context/Menu/MenuProvider.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <AnimatePresence>
             <DarkModeProvider>
-                <RouterProvider>
-                    <App />
-                </RouterProvider>
+                <MenuProvider>
+                    <RouterProvider>
+                        <App />
+                    </RouterProvider>
+                </MenuProvider>
             </DarkModeProvider>
         </AnimatePresence>
     </React.StrictMode>

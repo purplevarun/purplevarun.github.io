@@ -11,7 +11,7 @@ const LeftName = () => {
         animate(
             scope.current,
             { rotate: 720 },
-            { delay: 3, repeat: 5, duration: 1, repeatDelay: 0 }
+            { delay: 3, repeat: 0, duration: 1, repeatDelay: 0 }
         )
     }, [animate, scope])
     return (

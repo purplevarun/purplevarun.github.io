@@ -16,6 +16,7 @@ const MobileMenuButtons = () => {
                 x: menuOpen ? -40 : 0,
                 transition: { duration: 0.8 },
             }}
+            style={{ zIndex: 3 }}
         >
             {routes.map((route) => (
                 <MobileMenuItem
